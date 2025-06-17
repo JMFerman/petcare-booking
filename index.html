@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Care Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <header>
+    <h1>Pet Planner</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#booking">Booking</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+   <section class="hero">
+    <h2>Welcome to Pet Planner</h2>
+    <p>Booking pet care just got as easy as a belly rub. At Pet Planner, we match pet parents with perfect pros for walks, cuddles, sleepovers, and more—no stress, just happy paws.</p>
+    <a href="#booking"><button style="padding: 0.75rem 1.5rem; font-size: 1rem;">Book Now</button></a>
+  </section>
+
+  <div class="container" id="about">
+    <section>
+      <h2>About Us</h2>
+      <p>At Pet Planner, we’re dedicated to redefining pet care with trust, convenience, and compassion at the core. Our platform connects pet owners with thoroughly vetted, experienced caregivers for services ranging from daily walks to overnight stays. We believe that every pet deserves exceptional care tailored to their needs, and every owner deserves peace of mind.</p>
+    </section>
+
+     <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service-bubble">
+          <img src="https://via.placeholder.com/150" alt="Basic Walk">
+          <h3>Basic Walk</h3>
+          <p>A relaxing 30-min walk to keep your pet active and happy.</p>
+        </div>
+        <div class="service-bubble">
+          <img src="https://via.placeholder.com/150" alt="Drop-In Visit">
+          <h3>Drop-In Visit</h3>
+          <p>Quick check-ins to feed, play, and ensure your pet is comfortable.</p>
+        </div>
+        <div class="service-bubble">
+          <img src="https://via.placeholder.com/150" alt="Overnight Care">
+          <h3>Overnight Care</h3>
+          <p>Dedicated, round-the-clock attention while you're away.</p>
+        </div>
+        <div class="service-bubble">
+          <img src="https://via.placeholder.com/150" alt="Specialized Care">
+          <h3>Specialized Care</h3>
+          <p>Medication administration and care for senior or special needs pets.</p>
+        </div>
+      </div>
+    </section>
+
+     <section id="booking">
+      <h2>Book a Service</h2>
+      <form action="#" method="POST">
+        <label for="ownerName">Your Name</label>
+        <input type="text" id="ownerName" name="ownerName" placeholder="Enter your name" required>
+
+        <label for="petName">Pet's Name</label>
+        <input type="text" id="petName" name="petName" placeholder="Enter your pet's name" required>
+
+        <label for="petType">Type of Pet</label>
+        <select id="petType" name="petType" required>
+          <option value="">Select your pet</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="serviceSelect">Select Service</label>
+        <select id="serviceSelect" name="serviceSelect" required>
+          <option value="">Choose a service</option>
+          <option value="walk">Basic Walk</option>
+          <option value="dropIn">Drop-In Visit</option>
+          <option value="overnight">Overnight Care</option>
+          <option value="special">Specialized Care</option>
+        </select>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Comments</label>
+        <textarea id="message" name="message" rows="4" placeholder="Let us know any special requirements"></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+
+     <section id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"Pet Planner took care of my golden retriever during a last-minute trip. I felt at ease knowing she was in good hands!"</p>
+          <p><strong>- Jamie R.</strong></p>
+        </div>
+        <div class="testimonial">
+          <p>"The personalized care and attention to my cat’s needs truly exceeded my expectations. Highly recommend!"</p>
+          <p><strong>- Alex M.</strong></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+   <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What services do you offer?</span>
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          <p>We offer Basic Walks, Drop-In Visits, Overnight Care, and Specialized Care including medication administration and senior pet support.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can I cancel or reschedule my booking?</span>
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, you can cancel or reschedule your booking up to 24 hours before the appointment without any extra fees.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Are your services insured?</span>
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely. We are fully insured and have all necessary licenses to operate safely in Los Angeles.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How do you handle emergencies?</span>
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          <p>We have protocols in place for any pet emergency, including rapid contact with veterinary services, to ensure your pet's safety.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+   <footer id="contact">
+    <p>Pet Planner &#9679; Serving Los Angeles &mdash; Contact us at <a href="mailto:info@petplanner.com" style="color:#88c0d0;">info@petplanner.com</a></p>
+    <p>&copy; 2025 Pet Planner. All rights reserved.</p>
+  </footer>
+
+   <script>
+    // FAQ accordion functionality
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      item.querySelector(".faq-question").addEventListener("click", () => {
+        const answer = item.querySelector(".faq-answer");
+        const arrow = item.querySelector(".arrow");
+
+        // Toggle answer open/close
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+          arrow.innerHTML = "&#9660;";
+        } else {
+          // Close any other open accordions
+          faqItems.forEach(i => {
+            i.querySelector(".faq-answer").style.maxHeight = null;
+            i.querySelector(".arrow").innerHTML = "&#9660;";
+          });
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          arrow.innerHTML = "&#9650;";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
