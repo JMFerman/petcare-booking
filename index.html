@@ -20,11 +20,13 @@
   </header>
 
    <section class="hero">
+  <div class="hero-image"></div>
+  <div class="hero-text">
     <h2>Welcome to Pet Planner</h2>
     <p>Booking pet care just got as easy as a belly rub. At Pet Planner, we match pet parents with perfect pros for walks, cuddles, sleepovers, and more—no stress, just happy paws.</p>
-    <a href="#booking"><button style="padding: 0.75rem 1.5rem; font-size: 1rem;">Book Now</button></a>
-  </section>
-
+    <a href="#booking"><button>Book Now</button></a>
+  </div>
+</section>
   <div class="container" id="about">
     <section>
       <h2>About Us</h2>
@@ -35,22 +37,22 @@
       <h2>Our Services</h2>
       <div class="services">
         <div class="service-bubble">
-          <img src="https://via.placeholder.com/150" alt="Basic Walk">
+          <img src="https://images.pexels.com/photos/7800873/pexels-photo-7800873.jpeg?_gl=1*1emu09j*_ga*MTE4OTkxMTM5LjE3NDgwNjc0ODA.*_ga_8JE65Q40S6*czE3NTAxOTQ1NzQkbzQkZzEkdDE3NTAxOTQ2MTUkajE5JGwwJGgw" alt="Basic Walk">
           <h3>Basic Walk</h3>
           <p>A relaxing 30-min walk to keep your pet active and happy.</p>
         </div>
         <div class="service-bubble">
-          <img src="https://via.placeholder.com/150" alt="Drop-In Visit">
+          <img src="https://images.pexels.com/photos/25560323/pexels-photo-25560323.jpeg?_gl=1*5afxpc*_ga*MTE4OTkxMTM5LjE3NDgwNjc0ODA.*_ga_8JE65Q40S6*czE3NTAxOTQ1NzQkbzQkZzEkdDE3NTAxOTUxMDQkajMyJGwwJGgw" alt="Drop-In Visit">
           <h3>Drop-In Visit</h3>
           <p>Quick check-ins to feed, play, and ensure your pet is comfortable.</p>
         </div>
         <div class="service-bubble">
-          <img src="https://via.placeholder.com/150" alt="Overnight Care">
+          <img src="https://images.pexels.com/photos/16392613/pexels-photo-16392613.jpeg?_gl=1*1u6ghku*_ga*MTE4OTkxMTM5LjE3NDgwNjc0ODA.*_ga_8JE65Q40S6*czE3NTAxOTQ1NzQkbzQkZzEkdDE3NTAxOTQ3OTAkajU5JGwwJGgw" alt="Overnight Care">
           <h3>Overnight Care</h3>
           <p>Dedicated, round-the-clock attention while you're away.</p>
         </div>
         <div class="service-bubble">
-          <img src="https://via.placeholder.com/150" alt="Specialized Care">
+          <img src="https://images.pexels.com/photos/6816864/pexels-photo-6816864.jpeg?_gl=1*1xyw9vh*_ga*MTE4OTkxMTM5LjE3NDgwNjc0ODA.*_ga_8JE65Q40S6*czE3NTAxOTQ1NzQkbzQkZzEkdDE3NTAxOTQ5NTYkajI3JGwwJGgw" alt="Specialized Care">
           <h3>Specialized Care</h3>
           <p>Medication administration and care for senior or special needs pets.</p>
         </div>
@@ -108,76 +110,53 @@
     </section>
   </div>
 
-   <section id="faq">
+     <section id="faq" class="faq-container">
       <h2>Frequently Asked Questions</h2>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>What services do you offer?</span>
-          <span class="arrow">&#9660;</span>
+          <span class="arrow" aria-hidden="true">&#9660;</span>
         </div>
-        <div class="faq-answer">
+        <div class="faq-answer" aria-hidden="true">
           <p>We offer Basic Walks, Drop-In Visits, Overnight Care, and Specialized Care including medication administration and senior pet support.</p>
         </div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>Can I cancel or reschedule my booking?</span>
-          <span class="arrow">&#9660;</span>
+          <span class="arrow" aria-hidden="true">&#9660;</span>
         </div>
-        <div class="faq-answer">
-          <p>Yes, you can cancel or reschedule your booking up to 24 hours before the appointment without any extra fees.</p>
+        <div class="faq-answer" aria-hidden="true">
+          <p>You can cancel or reschedule your booking up to 24 hours before the appointment without any extra fees.</p>
         </div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>Are your services insured?</span>
-          <span class="arrow">&#9660;</span>
+          <span class="arrow" aria-hidden="true">&#9660;</span>
         </div>
-        <div class="faq-answer">
+        <div class="faq-answer" aria-hidden="true">
           <p>Absolutely. We are fully insured and have all necessary licenses to operate safely in Los Angeles.</p>
         </div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>How do you handle emergencies?</span>
-          <span class="arrow">&#9660;</span>
+          <span class="arrow" aria-hidden="true">&#9660;</span>
         </div>
-        <div class="faq-answer">
-          <p>We have protocols in place for any pet emergency, including rapid contact with veterinary services, to ensure your pet's safety.</p>
+        <div class="faq-answer" aria-hidden="true">
+          <p>We have protocols in place for pet emergencies, including rapid contact with veterinary services to ensure your pet's safety.</p>
         </div>
       </div>
     </section>
   </div>
 
-   <footer id="contact">
-    <p>Pet Planner &#9679; Serving Los Angeles &mdash; Contact us at <a href="mailto:info@petplanner.com" style="color:#88c0d0;">info@petplanner.com</a></p>
+  <!-- Footer -->
+  <footer id="contact">
+    <p>Pet Planner &#9679; Serving Los Angeles &mdash; Contact us at <a href="mailto:info@petplanner.com">info@petplanner.com</a></p>
     <p>&copy; 2025 Pet Planner. All rights reserved.</p>
   </footer>
 
-   <script>
-    // FAQ accordion functionality
-    const faqItems = document.querySelectorAll(".faq-item");
-
-    faqItems.forEach(item => {
-      item.querySelector(".faq-question").addEventListener("click", () => {
-        const answer = item.querySelector(".faq-answer");
-        const arrow = item.querySelector(".arrow");
-
-        // Toggle answer open/close
-        if (answer.style.maxHeight) {
-          answer.style.maxHeight = null;
-          arrow.innerHTML = "&#9660;";
-        } else {
-          // Close any other open accordions
-          faqItems.forEach(i => {
-            i.querySelector(".faq-answer").style.maxHeight = null;
-            i.querySelector(".arrow").innerHTML = "&#9660;";
-          });
-          answer.style.maxHeight = answer.scrollHeight + "px";
-          arrow.innerHTML = "&#9650;";
-        }
-      });
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
